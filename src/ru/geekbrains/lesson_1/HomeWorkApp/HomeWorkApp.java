@@ -1,54 +1,49 @@
 package ru.geekbrains.lesson_1.HomeWorkApp;
 
 public class HomeWorkApp {
-    public static void main(String[] args) {
-        printThreeWords();
-        checkSumSign();
-        printColor();
-        compareNumbers();
+public static void main(String[] args) {
+    within10and20();
+    isPositiveOrNegative();
+    isNegative();
+    printWordNTimes();
+}
+//mission-1
+public static boolean within10and20() {
+    int a = 9;
+    int b = 8;
+    int sum = a + b;
+    if (sum <= 20 & sum >= 10) {
+        System.out.println("true");
+        return true;
+    } else {
+        System.out.println("false");
+        return false;
     }
-
-    public static void printThreeWords() {
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
+}
+//mission-2
+private static void isPositiveOrNegative() {
+    int x = 6;
+    if (x >= 0) {
+        System.out.println("+");
+    } else {
+        System.out.println("-");
     }
-
-    public static void checkSumSign() {
-        int a = 3;
-        int b = 7;
-        int c = a + b;
-        if (c >= 0) {
-            System.out.println("Сумма положительная");
-        }
-        if (c < 0) {
-            System.out.println("Сумма отрицательная");
-        }
+}
+//mission-3
+private static boolean isNegative() {
+    int y = -2;
+    if (y < 0) {
+        System.out.println("-");
+    return true;
+    } else {
+        System.out.println("+");
+        return false;
     }
-
-    public static void printColor() {
-        int value = 10;
-        if (value <= 0) {
-            System.out.println("Красный");
-        }
-        if (value > 0 & value <= 100) {
-            System.out.println("Желтый");
-        }
-        if (value > 100) {
-            System.out.println("Зеленый");
-        }
+}
+//mission-4
+private static void printWordNTimes() {
+    for (int i = 0; i < 8; i++) {
+        System.out.println("times = " + i);
     }
-
-    public static void compareNumbers() {
-        int a = 12;
-        int b = 7;
-        if (a >= b) {
-            System.out.println("a >= b");
-        }
-        if (a < b) {
-            System.out.println("a < b");
-        }
-        System.out.println("Проверка завершена");
-    }
-
+}
 }
