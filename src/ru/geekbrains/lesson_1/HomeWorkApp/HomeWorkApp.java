@@ -6,7 +6,6 @@ public static void main(String[] args) {
     isPositiveOrNegative();
     isNegative();
     printWordNTimes();
-    stringNumber();
 }
 //mission-1
 public static boolean within10and20() {
